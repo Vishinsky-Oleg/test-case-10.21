@@ -1,0 +1,19 @@
+.Disciplines {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	& h2 {
+		text-align: center;
+		margin: 28px 0;
+	}
+}
+
+@media (min-width: 700px) {
+	.Disciplines {
+		& h2 {
+			font-size: 32px;
+			margin: 28px 0;
+		}
+	}
+}

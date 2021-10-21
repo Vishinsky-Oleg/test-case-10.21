@@ -1,0 +1,22 @@
+.FooterBox {
+	color: white;
+	margin: 12px 0;
+	font-weight: 300;
+	margin: 10px;
+	padding-bottom: 10px;
+	flex: 1;
+	& h3 {
+		padding: 20px 24px;
+		font-size: 22px;
+	}
+	& li,
+	p {
+		padding: 15px 12px;
+	}
+}
+
+@media (min-width: 700px) {
+	.FooterBox {
+		padding-bottom: 30px;
+	}
+}

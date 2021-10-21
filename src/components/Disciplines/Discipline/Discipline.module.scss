@@ -1,0 +1,100 @@
+.Discipline {
+	& h3 {
+		margin: 10px 0;
+	}
+	width: 100%;
+}
+.ModuleXl {
+	display: none;
+}
+.ModuleSm {
+	display: block;
+	font-size: 18px;
+	width: 100%;
+	margin: 10px 0;
+	padding: 14px 0;
+	font-weight: 300;
+	&.closed {
+		background: #f7f7f7;
+		&::before {
+			content: "+";
+			color: #d9d9d9;
+			margin: 0 20px 0 15px;
+		}
+	}
+	&.opened {
+		background: #ff3535;
+		color: white;
+		&::before {
+			content: "-";
+			color: white;
+			margin: 0 20px 0 15px;
+		}
+	}
+}
+
+.DisciplineList {
+	font-size: 15px;
+	font-weight: 300;
+	&.closed {
+		display: none;
+	}
+	&.opened {
+		display: block;
+	}
+}
+
+@media (min-width: 700px) {
+	.Discipline {
+		margin-bottom: 30px;
+		& h3 {
+			margin: 10px 0;
+			font-size: 26px;
+		}
+
+		&Module {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			padding-top: 54px;
+			&Box {
+				flex: 1;
+				display: flex;
+				flex-flow: row nowrap;
+
+				// width: 40%;
+				// display: inline-block;
+			}
+		}
+	}
+
+	.ModuleXl {
+		display: inline-block;
+		width: 100%;
+		font-size: 30px;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			display: inline-block;
+			top: -15px;
+			left: 0;
+			width: 85%;
+			height: 2px;
+			background: #ff3535;
+		}
+	}
+
+	.ModuleSm {
+		display: none;
+	}
+
+	.DisciplineList {
+		&.closed {
+			display: block;
+		}
+		&.opened {
+			display: block;
+		}
+	}
+}

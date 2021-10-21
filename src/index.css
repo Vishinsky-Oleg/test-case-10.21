@@ -1,0 +1,55 @@
+@font-face {
+	font-family: "Styrene";
+	src: url("./assets/fonts/StyreneAWeb-Regular.ttf") format("ttf"),
+		url("./assets/fonts/StyreneAWeb-Regular.woff2") format("woff2"),
+		url("./assets/fonts/StyreneAWeb-Regular.woff") format("woff");
+	font-weight: 400;
+}
+@font-face {
+	font-family: "Styrene";
+	src: url("./assets/fonts/StyreneAWeb-Light.ttf") format("ttf"),
+		url("./assets/fonts/StyreneAWeb-Light.woff2") format("woff2"),
+		url("./assets/fonts/StyreneAWeb-Light.woff") format("woff");
+	font-weight: 300;
+}
+@font-face {
+	font-family: "Styrene";
+	src: url("./assets/fonts/StyreneAWeb-Bold.ttf") format("ttf"),
+		url("./assets/fonts/StyreneAWeb-Bold.woff2") format("woff2"),
+		url("./assets/fonts/StyreneAWeb-Bold.woff") format("woff");
+	font-weight: 700;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	font-family: Styrene, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		"Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+		"Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+main {
+	max-width: 1440px;
+	margin: auto 15px;
+}
+
+ul {
+	list-style-position: inside;
+}
+li::marker {
+	color: #ff3535;
+}
+
+@media (min-width: 700px) {
+	main {
+		margin: 0 auto;
+		padding: 0 120px;
+	}
+}
